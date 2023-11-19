@@ -1,0 +1,45 @@
+:root{
+    --ancho-max: 100%;
+}
+.pruebaNav{
+    color: white;
+    width: fit-content;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+li{
+    margin-top: 1vh;
+}
+#TituloNav{
+    visibility: visible;
+    margin-top: 20vh;
+    margin-left: 75vw;
+}
+.hidden{
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.move-rightS1, .move-rightS2, .move-rightS3, .move-rightS4, .move-rightS5{
+    width: var(--ancho-max);
+    text-align: end;
+    background-color: purple;
+    padding: 10px;
+    transition: transform 1s;
+}
+.move-rightS2 {
+    margin-right: 5%;
+}
+.move-rightS3 {
+    margin-right: 10%;
+}
+.move-rightS4 {
+    margin-right: 15%;
+}
+.move-rightS5 {
+    margin-right: 20%;
+}

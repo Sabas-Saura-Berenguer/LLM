@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.contenedorGirado{
+    position: absolute;
+    background-color: gray;
+    min-width: 100%;
+    min-height: 300%;
+    rotate: 45deg;
+    left: -50%;
+    top: -125%;
+    z-index: 10;
+}
+
+.textoGirado{
+    position: relative;
+    /* background-color: aqua; */
+    top: 130vh;
+    font-size: 20px;
+    text-align: end;
+    rotate: 315deg;
+    z-index: 1;
+}
+.contenido{
+    margin-right: 20%;
+}
+.pruebaNav{
+    color: white;
+    width: fit-content;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+li{
+    margin-top: 1vh;
+}
+#TituloNav{
+    visibility: visible;
+    margin-top: 20vh;
+    margin-left: 75vw;
+}
+.hidden{
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+.move-rightS1, .move-rightS2, .move-rightS3, .move-rightS4, .move-rightS5{
+    /* width: var(--ancho-max); */
+    text-align: end;
+    background-color: purple;
+    padding: 10px;
+    transition: transform 1s;
+}
+.move-rightS2 {
+    margin-right: 5%;
+}
+.move-rightS3 {
+    margin-right: 10%;
+}
+.move-rightS4 {
+    margin-right: 15%;
+}
+.move-rightS5 {
+    margin-right: 20%;
+}
+
+.social{
+    margin-left: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-area:
+    "social1"
+    "social2"
+    "social3";
+    background-color: white;
+    border: 2px rgb(255, 200, 0);
+    width: 6%;
+}
+.social1, .social2, .social3{
+   width: 50px;
+    height: 50px;
+    margin: auto;
+}
