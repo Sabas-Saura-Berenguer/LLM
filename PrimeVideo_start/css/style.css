@@ -1,0 +1,189 @@
+body{
+    background-color: rgb(0, 0, 56);
+}
+#header{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    list-style-type: none;
+}
+#navheader{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+#navheader > li > a{
+    color: white;
+}
+#navheader > li{
+    margin-left: 20px;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding-left: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.buscadornav{
+    height: 20px;
+    margin-top: 15px;
+}
+#buscador{
+    width: 300px;
+}
+input[type="text"] {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+}
+
+#pelicula > img{
+    position: absolute;
+    width: 60%;
+    z-index: -10;
+    left: 30%;
+    opacity: 0.5;
+}
+#infopelicula{
+    color: white;
+    margin-left : 10%;
+    width: 60%;
+}
+
+#infopelicula > article > h1 {
+    font-family: 'Big Shoulders Stencil Text', sans-serif;    font-size: 40px;
+    font-style: normal;
+    word-spacing: 15px;
+    margin-bottom: 0px;
+}
+#navpelicula{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0px;
+}
+#navpelicula > li{
+    padding-right: 10px;
+    color: grey;
+    font-size: 12px;
+}
+#navpelicula > li > a{
+    text-decoration: none;
+    color: grey;
+    border: solid 1px grey;
+    padding: 5px;
+}
+#gridInfo{
+    display: grid;
+    margin-bottom: 5%;
+    grid-template-columns: 1 1;
+    column-gap: 20px;
+    width: fit-content;
+    grid-template-areas: 
+    "gridT1 gridI1"
+    "gridT2 gridI2"
+    "gridT3 gridI3"
+    "gridT4 gridI4"
+    "gridT5 gridI5"
+    ;
+}
+#flexbutton{
+    display: flex;
+}
+#flexbutton > button{
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    vertical-align:middle;
+    background-color: rgb(94, 94, 121);
+    color: white;
+    border-radius: 10px;
+}
+#flexbutton > button:first-child{
+    display: flex;
+    width: 150px;
+    line-height: 50px;
+}
+.fa-play-circle{
+    font-size: 50px;
+}
+#rel{
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-size: xx-large;
+    width: fit-content;
+}
+#gridRelacionado{
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-inline: 10%;
+    padding-top: 5%;
+    border-top: solid 1px grey;
+    
+    grid-template-areas: 
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    ;
+}
+
+#gridRelacionado > article > a > img {
+    width: 100%;
+}
+
+figcaption{
+    position: absolute;
+    color: white;
+    rotate: -90deg;
+    margin-left: 86%;
+    margin-top: 10%;
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer > nav > ul{
+    display: flex;
+    width: fit-content;
+}
+#footer > nav > ul > li, #footer > nav > ul > li > a{
+    width: fit-content;
+    margin-right: 5% ;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
