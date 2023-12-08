@@ -13,14 +13,23 @@
 // // https://stackoverflow.com/questions/26543645/how-to-move-div-to-left-on-every-click-just-javascript-no-jquery
 
 function Menu() {
-  var lis = document.querySelectorAll('nav ul li:not(#TituloNav)');
-  for (var i = 0; i < lis.length; i++) {
+  let lis = document.querySelectorAll('nav ul li:not(#TituloNav)');
+  for (let i = 0; i < lis.length; i++) {
     lis[i].classList.toggle('hidden');
     lis[i].classList.toggle('move-right' + lis[i].id);
     if (!lis[i].classList.contains('hidden')) {
       lis[i].style.transform = 'translateX(0)';
     } else {
       lis[i].style.transform = 'translateX(-100%)';
-    }
+    }    
   }
 }
+  function BarMenu(x) {
+    x.classList.toggle("change");
+    let nav = document.querySelector('.navLinks');
+    if (nav.style.display === "none") {
+      nav.style.display = "block";
+    } else {
+      nav.style.display = "none";
+    }
+  }
