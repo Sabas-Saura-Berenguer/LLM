@@ -1,5 +1,9 @@
+/* Modificado:
+  Cambiado los colores para ajustarse a la paleta.
+  Añadido cursor: pointer; para que se cambie el culsor al palsar por encima.
+  Añadido Media Query para movil
+  */
 
-/* CSS */
 .button-49,
 .button-49:after {
   width: 150px;
@@ -18,7 +22,6 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   cursor: pointer;
-  
 }
 
 .button-49:after {
@@ -39,6 +42,19 @@
   background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
   clip-path: var(--slice-0);
+}
+
+.btn1::after{
+  content: 'Novedades';
+}
+.btn2::after{
+  content: 'Proyectos';
+}
+.btn3::after{
+  content: 'Contacto';
+}
+.btn4::after{
+  content: 'Enviare';
 }
 
 .button-49:hover:after {
@@ -93,11 +109,11 @@
   }
 }
 
-@media (min-width: 768px) {
-  .button-49,
-  .button-49:after {
-    width: 200px;
-    height: 86px;
-    line-height: 88px;
+@media only screen and (max-width: 678px) {
+  .button-49, .button49::after {
+    width: 100%;
+    height: 100%;
+    line-height: normal;
+    font-size: small;
   }
 }
