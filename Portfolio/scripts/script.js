@@ -38,9 +38,7 @@ function añadirCont1() {
   const cont1 = document.querySelector(".añadirDOM");
   cont1.innerHTML = `
       <section>
-        <h1>Dice Mini Game </h1>
-        <p>Minijuego que baja la vida del slime segun el número del dado</p>
-        <a href=""><img class="imgN" src="img/DiceGameWeb.png" alt="Imagen con enlace a la página de la novedad"></a>
+        <h1><a href="newsletter.html">Ver Newsletter</a></h1>
       </section>
       <section>
         <h1>¿Quieres recibir el Newsletter mensual?</h1>
