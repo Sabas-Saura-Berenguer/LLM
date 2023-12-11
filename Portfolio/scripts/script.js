@@ -93,10 +93,10 @@ function añadirCont3() {
         </section>
         <section class="contactoLinks">
             <section>
-                <a href=""><img class="imgIcon" src="img/twittericon.svg" alt=""></a>
-                <a href=""><img class="imgIcon" src="img/linkedinicon.svg" alt=""></a>
-                <a href=""><img class="imgIcon" src="img/githubicon.svg" alt=""></a>
-                <a href=""><img class="imgIcon" src="img/mail.svg" alt=""></a>
+                <a href="twitter.com"><img class="imgIcon" src="img/twittericon.svg" alt=""></a>
+                <a href="https://es.linkedin.com"><img class="imgIcon" src="img/linkedinicon.svg" alt=""></a>
+                <a href="https://github.com"><img class="imgIcon" src="img/githubicon.svg" alt=""></a>
+                <a href="https://mail.google.com"><img class="imgIcon" src="img/mail.svg" alt=""></a>
             </section>
         </section>
     </form>
